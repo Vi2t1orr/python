@@ -1,0 +1,135 @@
+Exercicios_condicionais:
+
+
+EX1..........................................................................................
+
+idade = int(input("\nInforme a idade: "))
+s = input("\nDigite o sexo da pessoa: ")
+
+if idade > 0 and idade < 12 and s.lower() == 'feminino':
+    print("\nMenina")
+elif idade >= 12 and idade < 24 and s.lower() == 'feminino':
+    print("\nMoça")    
+elif idade > 24 and s.lower() == 'feminino':
+    print("\nMulher")
+elif idade > 0 and idade < 12 and s.lower() == 'masculino':
+    print("\nMenino")
+elif idade >= 12 and idade < 24 and s.lower() == 'masculino':
+    print("\nRapaz")      
+elif idade > 24 and s.lower() == 'masculino':
+    print("\nHomem") 
+else: 
+    print("\nAlgo de errado nao esta certo\n")
+
+
+
+EX2..........................................................................................
+
+a = int(input("\nDigite um valor para a:"))
+b = int(input("\nDigite um valor para b:"))   
+c = int(input("\nDigite um valor para c:"))   
+
+crescente = sorted ([a,b,c])
+
+print(f"{crescente}")
+
+
+
+EX3..........................................................................................
+
+a = int(input("\nDigite um valor para a:"))
+b = int(input("\nDigite um valor para b:"))   
+c = int(input("\nDigite um valor para c:"))   
+d = int(input("\nDigite um valor para d:"))
+e = int(input("\nDigite um valor para e:"))  
+
+
+maior = max ([a,b,c,d,e])
+
+print(f"\n\n\{maior}")
+
+
+
+EX4..........................................................................................
+
+x = int(input("\n\nDigite um valor para x: "))
+y = int(input("\nDigite um valor para y: "))
+soma = x + y
+if soma * 30/100 > 500:
+    
+    x,y = y,x
+    
+    #troca dos valores
+    print(f"\nx = {x} e y = {y}")
+    
+elif x > y:
+    print("\nO menor valor é y.")
+
+elif x == y:
+    print("\nAs variaveis x e y são iguais")
+    
+else:
+    print(f"\nO menor valor é x.")
+
+
+EX5..........................................................................................
+
+
+#__________esta tendo erro___
+
+
+
+a = float(input("\nDigote o numero de litros vendidos de alcool: "))
+g = float(input("\nDigote o numero de litros vendidos de gasolina: "))
+
+preco_a = float
+preco_g = float
+
+preco_a =  6,50 * a
+preco_g = 7,20 * g
+
+if 0 < a < 20:
+
+    da1 = preco_a * 3/100
+    print(f"\nO preço a ser pago pelo alcool é de R${da1}")
+
+elif a > 20:
+
+    da2 = preco_a * 5/100
+    print(f"\nO preço a ser pago pelo alcool é de R${da2}")
+
+elif 0 < g < 20:
+
+    dg1 = preco_g * 4/100
+    print(f"\nO preço a ser pago pelo alcool é de R${dg1}")
+
+elif g > 20:
+
+    dg2 = preco_g * 6/100
+    print(f"\nO preço a ser pago pelo alcool é de R${dg2}")
+
+else:
+    print("\nbdkfbejkb")
+
+
+EX6..........................................................................................
+
+#nao funciona com 
+
+dia = int(input("\nDigite o dia: "))
+mes = int(input("\nDigite o mes: "))
+ano = int(input("\nDigite o ano "))
+
+dias = int(input("\nDigite o quantos dias quer somar: "))
+
+dtotal = dia + dias
+
+while dtotal > 30:
+    dtotal - 30
+    mes + 1
+    
+while mes > 12:
+    mes - 12 
+    ano + 1
+
+print(f"{dtotal}/{mes}/{ano}.")
